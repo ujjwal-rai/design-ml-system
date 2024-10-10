@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistic Regression WebApp</title>
+</head>
+<body>
+    <h1>Logistic Regression WebApp</h1>
+    <form id="uploadForm" enctype="multipart/form-data" action="/upload" method="POST">
+        <label for="dataset">Upload Training Dataset (CSV):</label>
+        <input type="file" id="dataset" name="dataset" accept=".csv" required><br><br>
+
+        <label for="features">Upload Feature Description File (CSV):</label>
+        <input type="file" id="features" name="features" accept=".csv" required><br><br>
+
+        <button type="submit">Upload and Run Logistic Regression</button>
+    </form>
+</body>
+</html>
